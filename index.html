@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revanth Sai Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 40px;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      animation: fadeInLeft 1s ease-in-out;
+    }
+
+    .sidebar img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .main-content section {
+      background-color: #1f1f1f;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #00bcd4;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="https://via.placeholder.com/180" alt="Revanth Sai Photo">
+      <h2>Revanth Sai</h2>
+      <p>Data Engineer | Cloud Enthusiast</p>
+    </aside>
+
+    <div class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Data Engineer with over 5 years of experience in building scalable data pipelines, working with GCP, Azure, BigQuery, and Snowflake. I focus on data quality, automation, and business intelligence solutions.</p>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li><strong>Verizon</strong> – Migrated Teradata workloads to BigQuery, built scalable ETL pipelines using Dataflow and Composer.</li>
+          <li><strong>Humana</strong> – Built healthcare compliance pipelines using PySpark and Databricks on Azure.</li>
+          <li><strong>Warner Music Group</strong> – Developed dashboards and Snowflake pipelines for music analytics.</li>
+        </ul>
+      </section>
+
+      <section id="companies">
+        <h2>Companies I've Worked With</h2>
+        <ul>
+          <li>Verizon</li>
+          <li>Humana</li>
+          <li>Warner Music Group</li>
+        </ul>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Google Cloud Professional Data Engineer</li>
+          <li>Microsoft Azure Data Engineer Associate</li>
+          <li>Snowflake SnowPro Core Certification</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: revanthsai@example.com</p>
+        <p>LinkedIn: linkedin.com/in/revanthsai</p>
+        <p>GitHub: github.com/revanthsai</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Revanth Sai. All rights reserved.</p>
+  </footer>
+</body>
+</html>
